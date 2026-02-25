@@ -11,3 +11,5 @@ class Point:
     def y(self) -> float:
         return self._y
     
+    def distance_to(self, point: 'Point') -> float:
+        return ((self.x - point.x) ** 2 + (self.y - point.y) ** 2) ** 0.5
